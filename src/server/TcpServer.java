@@ -16,7 +16,7 @@ public class TcpServer {
 			FileOutputStream fos = new FileOutputStream("server_recv.txt");
 			FileInputStream fis = new FileInputStream("server_send.txt")){
 			
-			System.out.println("クライアントからの接続を待ちます");
+			System.out.println("クライアントからの接続を待ちます。");
 			Socket socket = server.accept();
 			System.out.println("クライアント接続。");
 			
