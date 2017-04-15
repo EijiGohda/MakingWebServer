@@ -6,6 +6,7 @@ import java.net.*;
 public class TcpClient {
 
 	public static void main(String[] args) {
+		//Å‰‚Íclient_send.txt‚Ì‚İ€”õ
 		try(Socket socket = new Socket("localhost", 8001);
 			FileInputStream fis = new FileInputStream("client_send.txt");
 			FileOutputStream fos = new FileOutputStream("client_recv.txt")){

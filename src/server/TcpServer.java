@@ -11,6 +11,7 @@ import java.net.Socket;
 public class TcpServer {
 	
 	public static void main(String[] args){
+		//Å‰‚Íserver_send.txt‚Ì‚İ—pˆÓ
 		try(ServerSocket server = new ServerSocket(8001);
 			FileOutputStream fos = new FileOutputStream("server_recv.txt");
 			FileInputStream fis = new FileInputStream("server_send.txt")){
