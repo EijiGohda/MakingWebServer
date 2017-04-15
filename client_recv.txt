@@ -1,2 +1,4 @@
 accepted
 message from server.
+
+日本語確認です。サーバーサイド。

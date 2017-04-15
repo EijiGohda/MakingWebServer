@@ -1,2 +1,4 @@
 Hello WebApp!
 message from client.
+
+日本語確認です。クライアントサイド。
