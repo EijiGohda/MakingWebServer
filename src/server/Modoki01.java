@@ -6,10 +6,10 @@ import java.util.*;
 import java.text.*;
 
 public class Modoki01 {
-
+ã€€ã€€// comment by Mac book 
 	private static final String DOCUMENT_ROOT = "C:\\xampp\\htdocs";
 	
-	//InputSream‚©‚ç‚ÌƒoƒCƒg—ñ‚ğAs’PˆÊ‚Å“Ç‚İ‚Şƒ†[ƒeƒBƒŠƒeƒBƒƒ\ƒbƒh
+	//InputSreamï¿½ï¿½ï¿½ï¿½Ìƒoï¿½Cï¿½gï¿½ï¿½ï¿½ï¿½Aï¿½sï¿½Pï¿½Ê‚Å“Ç‚İï¿½ï¿½Şƒï¿½ï¿½[ï¿½eï¿½Bï¿½ï¿½ï¿½eï¿½Bï¿½ï¿½ï¿½\ï¿½bï¿½h
 	private static String readLine(InputStream input) throws Exception {
 		int ch;
 		String ret="";
@@ -29,8 +29,8 @@ public class Modoki01 {
 		}
 	}
 	
-	//1s‚Ì•¶š—ñ‚ğAƒoƒCƒg—ñ‚Æ‚µ‚ÄOutputStream‚É‘‚«‚Ş
-	//ƒ†[ƒeƒBƒŠƒeƒBƒƒ\ƒbƒh
+	//1ï¿½sï¿½Ì•ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Aï¿½oï¿½Cï¿½gï¿½ï¿½Æ‚ï¿½ï¿½ï¿½OutputStreamï¿½Éï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	//ï¿½ï¿½ï¿½[ï¿½eï¿½Bï¿½ï¿½ï¿½eï¿½Bï¿½ï¿½ï¿½\ï¿½bï¿½h
 	private static void writeLine(OutputStream output, String str) throws Exception{
 		for (char ch: str.toCharArray()){
 			output.write((int)ch);
@@ -39,7 +39,7 @@ public class Modoki01 {
 		output.write((int)'\n');
 	}
 	
-	//Œ»İ‚©‚çAHTTP•W€‚É‡‚í‚¹‚ÄAƒtƒH[ƒ}ƒbƒg‚³‚ê‚½“ú•t•¶š—ñ‚ğ•Ô‚·
+	//ï¿½ï¿½ï¿½İï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½AHTTPï¿½Wï¿½ï¿½ï¿½Éï¿½ï¿½í‚¹ï¿½ÄAï¿½tï¿½Hï¿½[ï¿½}ï¿½bï¿½gï¿½ï¿½ï¿½ê‚½ï¿½ï¿½ï¿½tï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô‚ï¿½
 	private static String getDateStringUtc() {
 		Calendar cal = Calendar.getInstance(TimeZone.getTimeZone("UTC"));
 		DateFormat df = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss", Locale.US);
@@ -64,7 +64,7 @@ public class Modoki01 {
 			}
 			
 			OutputStream output = socket.getOutputStream();
-			//ƒŒƒXƒ|ƒ“ƒXƒwƒbƒ_‚ğ•Ô‚·
+			//ï¿½ï¿½ï¿½Xï¿½|ï¿½ï¿½ï¿½Xï¿½wï¿½bï¿½_ï¿½ï¿½Ô‚ï¿½
 			writeLine(output, "HTTP/1.1 200 OK");
 			writeLine(output, "Date: " + getDateStringUtc());
 			writeLine(output, "Server: Modoki/0.1");
